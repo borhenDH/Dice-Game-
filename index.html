@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images\dice6.png">
+    </head>
+    
+<body> 
+    
+    <div class="head">
+        <h1 class="sentence"><em>Press your Luck!</em> </h1>
+    </div>
+
+    <div class="score-board">
+        <h2 class="score">Score Board</h2>
+           <h4 class="time">Time Remaining : <span id="timer"></span></h4>
+            <h3><span class="player1">Player 1</span> :<span id="player1-score">0</span></h3>
+            <h3><span class="player2">Player 2</span> :<span id="player2-score">0</span></h3>  
+    </div>
+
+    <div class="container">
+         <div class="dice"><h2 class="player player1">Player1</h2>
+        <img class="image" src="images\dice6.png" alt=""></div>
+         <div class="dice"><h2 class="player player2">Player2</h2>
+            <img class="image2" src="images\dice6.png" alt=""></div>    
+    </div>
+    <br>
+    <div class="press">
+       <button id="press">ROLL</button>
+       <button onClick="window.location.reload()">Reset</button>
+       <button id="color-btn">Change Color</button>
+    </div>
+    <footer>
+        <h4 id="copyright"></h4>
+    </footer>
+   <script src="index.js"></script>
+</body>
+</html>

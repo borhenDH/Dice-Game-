@@ -1,0 +1,78 @@
+body{
+    background-color: #A5C9CA;
+}
+.head{
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2rem;
+    margin: 0px;
+}
+.sentence{
+    
+    font-family: cursive;
+    color: #16213E;
+}
+.dice{
+    display: inline-block;
+    text-align: center;
+    padding-left: 40px ;
+    padding-right: 40px;
+}
+.container{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2{
+    font-family: cursive;
+    color: #0F3460;
+}
+.press{
+    text-align: center;
+    padding-top: 10px;
+}
+button{
+    height: 40px;
+    width: 15%;
+    color:darkred;
+    background-color:cornsilk;
+    font-size: larger;
+    border-radius: 25px;
+
+}
+button:hover{
+    background-color: darkgray;
+    font-weight: bold;
+}
+.player{
+    font-size: 2rem;
+}
+h4{
+    color: black;
+}
+.score-board{
+text-align: center;
+background-color: #FFB84C;
+width: 35%;
+margin-left: 32.5%;
+border-radius: 25px;
+height: 250px;
+}
+.score{
+    padding-top: 10px;
+    font-size: 40px;
+}
+.time{
+    margin: 0;
+    font-size: 40px;
+}
