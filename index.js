@@ -103,41 +103,38 @@ function changeDiceImages() {
 // disable the roll button for 4 seconds after it's clicked
 
 function disableButton() {
-    document.querySelector("button").disabled = true;
-    setTimeout(function() {
-        document.querySelector("button").disabled = false;
-    }, 2000);
+  document.querySelector("button").disabled = true;
+  setTimeout(function() {
+      document.querySelector("button").disabled = true;
+  }, parseInt(timeRemaining) * 1000);
 }
-
 var endgame = new Audio("sounds/win sound.mp3");
 
 // start the timer countdown and end the game when time is up
 
 function countDown() {
-    let timeLeft = parseInt(timeRemaining);
-    if (timeLeft >0) {
+  let timeLeft = parseInt(timeRemaining);
+  if (timeLeft > 0) {
       timeLeft--;
       document.querySelector("#timer").textContent = timeLeft;
       var tick = new Audio("sounds/tick.mp3"); 
       tick.play();
       timeRemaining = timeLeft.toString();
-    } else {
+  } else {
       clearInterval(timer);
+      if(player1Score > player2Score) {
+          document.querySelector("h1").textContent = player1 + " won the GAME👏👏"
+      } else if(player1Score === player2Score) {
+          document.querySelector("h1").textContent = "GAME Draw";
+      } else {
+          document.querySelector("h1").textContent = player2 + " won the GAME👏👏"
+      }
       document.querySelector("button").disabled = true;
       endgame.play();
-      if(player1Score>player2Score){
-        document.querySelector("h1").textContent=player1+" won the GAME👏👏"
-      }
-      else if(player1Score=== player2Score){
-        document.querySelector("h1").textContent="GAME Draw";
-      }
-      else{
-        document.querySelector("h1").textContent=player2+" won the GAME👏👏"
-      }
-      // game over logic here
-    }
+      disableButton();
   }
-
+  document.querySelector("button").disabled = false;
+}
   //setting Copyright
   
  document.querySelector("#copyright").innerHTML="Copy right to Borhen "+(new Date().getFullYear());
