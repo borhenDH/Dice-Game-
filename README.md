@@ -3,6 +3,7 @@ This is a simple dice roll game built with HTML, CSS, and JavaScript.
 
 # Overview
 The Dice Roll Game is a two-player game where each player takes turns rolling a dice. The game keeps track of the scores for each player, and the player with the highest score at the end of the game wins.
+link : https://borhendh.github.io/Dice-Game-/
 
 # How to play 
 1- Click the "Roll" button to roll the dice.
